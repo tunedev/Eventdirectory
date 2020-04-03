@@ -1,0 +1,112 @@
+@import url("./header.css");
+@import url("./footer.css");
+@import url("./reset.css");
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.info-section {
+  display: grid;
+  grid-template-columns: auto;
+  grid-gap: 50px;
+  padding: 30px 50px;
+}
+
+.main-title {
+  color: #f15525;
+  text-align: center;
+  font-size: 24px;
+}
+
+.info-icon {
+  width: 100px;
+  height: 100px;
+  display: block;
+  margin: 10px auto;
+}
+
+.info-box {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: auto;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  margin: auto;
+}
+
+.info-title {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.card {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 60% 30%;
+  grid-gap: 10%;
+  padding: 5px 10px;
+}
+
+.card img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+}
+
+.orange {
+  background: #e17e65;
+}
+
+.blue {
+  background: #519cd7;
+}
+
+.green {
+  background: #98a5a6;
+}
+
+.card-info__left {
+  display: grid;
+  grid-template-columns: auto;
+  width: 50%;
+  height: 80%;
+  margin: auto;
+}
+
+.card-info__left button {
+  background: white;
+  display: block;
+  box-sizing: content-box;
+  max-width: 40%;
+  max-height: 40px;
+}
+
+.card-button-green {
+  color: #98a5a6;
+}
+
+.card-button-orange {
+  color: #e17e65;
+  width: 40%;
+}
+
+@media only screen and (min-width: 1024px) {
+  .info-section {
+    grid-template-columns: auto auto;
+  }
+
+  .main-title {
+    margin: 30px auto;
+  }
+
+  .card img {
+    width: 250px;
+    height: 250px;
+  }
+}
